@@ -780,6 +780,10 @@ spec:
                     type: object
                 type: object
               type: array
+            globalOutputRefs:
+              items:
+                type: string
+              type: array
             loggingRef:
               type: string
             match:
@@ -826,6 +830,7 @@ spec:
                 type: object
               type: array
             outputRefs:
+              description: Deprecated
               items:
                 type: string
               type: array
@@ -834,8 +839,6 @@ spec:
                 type: string
               description: Deprecated
               type: object
-          required:
-          - outputRefs
           type: object
         status:
           description: FlowStatus defines the observed state of Flow
